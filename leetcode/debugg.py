@@ -60,4 +60,16 @@ class Solution560:
                 ans+=curDict[oldSum]
             curDict[curSum]=curDict.get(curSum,0)+1
         return ans
+
+class Solution448_1:
+    def finddDisappearNumbers(self,nums:List[int])->List[int]:
+        ans=[]
+        for i in range(len(nums)):
+            index=abs(nums[i])-1
+            if nums[index]>0:
+                nums[index]*=-1
+        for j in range(len(nums)):
+            if nums[j]>0:
+                ans.append(j+1)
+        return ans
                 
