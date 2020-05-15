@@ -72,4 +72,3 @@ class Solution448_1:
             if nums[j]>0:
                 ans.append(j+1)
         return ans
-                
