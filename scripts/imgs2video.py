@@ -9,7 +9,7 @@ import cv2
 import glob
 import argparse
 
-fourcc=cv2.VideoWriter_fourcc('M','J','P','G')
+fourcc=cv2.VideoWriter_fourcc('X','V','I','D')
 writer=cv2.VideoWriter('output.mp4',fourcc,5,(640,512))
 
 for i in range(9475,9658):
